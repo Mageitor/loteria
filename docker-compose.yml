@@ -1,0 +1,13 @@
+services:
+  guesser:
+    build: .
+    ports:
+      - "8080:8080"
+    restart: always
+    environment:
+      CHALLENGE_FLAG: "URJC{replace_with_real_flag}"
+    volumes:
+    - m2:/root/.m2
+
+volumes:
+  m2:

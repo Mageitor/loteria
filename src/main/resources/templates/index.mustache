@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+{{> head}}
+
+<body>
+<div class="container">
+<div class="jumbotron">
+
+    <h1>Guess the number I am thinking of!</h1>
+    <form method="POST" action="/check">
+        <div class="form-group">
+        <label for="number">Your guess:</label><br>
+        <input class="form-control" type="number" min="0" id="number" name="number"><br>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Check</button>
+    </form>
+    <form method="POST" action="/reset">
+        <button type="submit" class="btn btn-outline-primary">Start from scratch</button>
+    </form>
+
+</div>
+</div>
+</body>
+
+</html>
